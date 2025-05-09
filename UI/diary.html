@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="../css/fontawesome.css" />
+        <link rel="stylesheet" href="../css/brands.css" />
+        <link rel="stylesheet" href="../css/solid.css" />
+        <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        .header{
+            width: 100%;
+            height: 10%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sidebar{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ourname{
+            margin-left: 30px;
+            width: 60%;
+            font-family: poppins;
+            color: rgb(44, 71, 62);
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .header img{
+            width: 40px;
+            height: 35px;
+        }
+
+        #notification_icon{
+            width: 10%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #notification_icon img{
+            width: 30px;
+            height: 25px;
+        }
+
+        #avatar{
+            width: 10%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(151, 236, 138);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer img{
+            width: 40px;
+            height: 35px;
+        }
+
+        .footer div{
+            margin: 10px;
+            width: 25%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #temp_chart h4{
+            font-size: 20px;
+            color: rgb(44, 71, 62);
+            font-family: poppins;
+            font-weight: bold;
+        }
+
+        #temp_chart img{
+            width: 315px;
+            height: 220px;
+            margin: 10px 0px 10px 20px;
+        }
+
+        .control_light{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            margin-top: 20px;
+            background-color: rgb(233, 251, 230);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        #submit_button{
+            width: 40%;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            display: block;
+            margin-left: auto;
+        }
+    </style> -->
+        <title>Light Control</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div id="sidebar">
+                    <img src="../images/sidebar.png" />
+                </div>
+
+                <div id="ourname">APulse</div>
+
+                <div id="notification_icon">
+                    <img src="../images/notify.png" />
+                </div>
+
+                <div id="avatar">
+                    <img src="../images/avatar.png" />
+                </div>
+            </div>
+            <div class="main_content">
+                <div id="temp_chart">
+                    <h4 class="chart_title">Nhật ký</h4>
+                    <img src="../images/area-chart.png" />
+                </div>
+            </div>
+            <div class="footer">
+                <div id="home_icon">
+                    <a href="home.html" class="icon-footer"
+                        ><i class="fa-solid fa-house"></i
+                    ></a>
+                </div>
+                <div id="area_chart">
+                    <a href="chart.html" class="icon-footer"
+                        ><i class="fa-solid fa-chart-line"></i
+                    ></a>
+                </div>
+
+                <div id="note">
+                    <a href="diary.html" class="icon-footer"
+                        ><i class="fa-solid fa-database"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

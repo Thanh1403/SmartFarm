@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="../css/fontawesome.css" />
+        <link rel="stylesheet" href="../css/brands.css" />
+        <link rel="stylesheet" href="../css/solid.css" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div id="sidebar">
+                    <img src="../images/sidebar.png" />
+                </div>
+
+                <div id="ourname">APulse</div>
+
+                <div id="notification_icon">
+                    <img src="../images/notify.png" />
+                </div>
+
+                <div id="avatar">
+                    <img src="../images/avatar.png" />
+                </div>
+            </div>
+            <div class="main_content">
+                <div id="display_screen">
+                    <div class="display_temp">
+                        <p class="icon-screen">
+                            <i class="fa-solid fa-temperature-high"></i>
+                        </p>
+                        <p class="name_display">Nhiệt độ</p>
+                        <p class="para_display" id="temp-screen"></p>
+                    </div>
+                    <div class="display_humi">
+                        <p class="icon-screen">
+                            <i class="fa-solid fa-droplet"></i>
+                        </p>
+                        <p class="name_display">Độ ẩm</p>
+                        <p class="para_display" id="humi-screen"></p>
+                    </div>
+                    <div class="display_light">
+                        <p class="icon-screen">
+                            <i class="fa-solid fa-sun"></i>
+                        </p>
+                        <p class="name_display">Ánh sáng</p>
+                        <p class="para_display" id="light-screen"></p>
+                    </div>
+                </div>
+
+                <div id="control_button">
+                    <div class="control_div1">
+                        <div class="control_div" id="air_conditioner">
+                            <a href="air_condition_control.html"
+                                ><img
+                                    src="../images/air-conditioner_2200454.png"
+                            /></a>
+                            <label
+                                class="form-check-label"
+                                for="air_conditioner_button"
+                                >Relay Controller</label
+                            >
+                            <div class="form-check form-switch">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="relay_button" />
+                            </div>
+                        </div>
+
+                        <div class="control_div" id="humidity">
+                            <a href="pumb_control.html"
+                                ><img src="../images/humidity_8923690.png"
+                            /></a>
+                            <label class="form-check-label" for="pumb_button"
+                                >Máy bơm</label
+                            >
+                            <div class="form-check form-switch">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="pumb_button" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="control_div2">
+                        <div class="control_div" id="light_bulb">
+                            <a href="light_control.html"
+                                ><img src="../images/light-bulb_2987996.png"
+                            /></a>
+                            <label class="form-check-label" for="light_button"
+                                >Đèn</label
+                            >
+                            <div class="form-check form-switch">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="led_button" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div id="home_icon">
+                    <a href="home.html" class="icon-footer"
+                        ><i class="fa-solid fa-house"></i
+                    ></a>
+                </div>
+                <div id="area_chart">
+                    <a href="chart.html" class="icon-footer"
+                        ><i class="fa-solid fa-chart-line"></i
+                    ></a>
+                </div>
+
+                <div id="note">
+                    <a href="diary.html" class="icon-footer"
+                        ><i class="fa-solid fa-database"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+        <div class="setTime">
+            <label for="timeInput">Thời gian bật máy bơm:</label>
+            <input
+                type="time"
+                id="timeInputOn"
+                name="timeInputOn"
+                step="3600" />
+            <button onclick="getSelectedTimeOn()">Lấy thời gian</button>
+        </div>
+        <div class="setTime">
+            <label for="timeInput">Thời gian tắt máy bơm:</label>
+            <input
+                type="time"
+                id="timeInputOff"
+                name="timeInputOff"
+                step="3600" />
+            <button onclick="getSelectedTimeOff()">Lấy thời gian</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="../css/fontawesome.css" />
+        <link rel="stylesheet" href="../css/brands.css" />
+        <link rel="stylesheet" href="../css/solid.css" />
+        <title>Light Control</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div id="sidebar">
+                    <img src="../images/sidebar.png" />
+                </div>
+
+                <div id="ourname">APulse</div>
+
+                <div id="notification_icon">
+                    <img src="../images/notify.png" />
+                </div>
+
+                <div id="avatar">
+                    <img src="../images/avatar.png" />
+                </div>
+            </div>
+            <div class="main_content">
+                <div id="temp_chart">
+                    <h4 class="chart_title">Nhiệt độ</h4>
+                    <div class="chart_box">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+
+                <div id="humi_chart">
+                    <h4 class="chart_title">Độ ẩm</h4>
+                    <div class="chart_box">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+
+                <div id="light_chart">
+                    <h4 class="chart_title">Ánh sáng</h4>
+                    <div class="chart_box">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div id="home_icon">
+                    <a href="home.html" class="icon-footer"
+                        ><i class="fa-solid fa-house"></i
+                    ></a>
+                </div>
+                <div id="area_chart">
+                    <a href="chart.html" class="icon-footer"
+                        ><i class="fa-solid fa-chart-line"></i
+                    ></a>
+                </div>
+
+                <div id="note">
+                    <a href="diary.html" class="icon-footer"
+                        ><i class="fa-solid fa-database"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- <script src="./main.js"></script> -->
+        <script src="./chart.js"></script>
+    </body>
+</html>
